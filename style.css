@@ -1,0 +1,79 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes roll{
+    25%{
+        transform:rotate(45deg);
+    }
+    50%{
+        transform:rotate(90deg);
+    }
+    75%{
+        transform:rotate(135deg);
+    }
+    100%{
+        transform:rotate(180deg);
+    }
+}
+
+body{
+    margin:0;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:first baseline;
+    margin-top:30px;
+}
+
+h1{
+    font-size:40px;
+    margin-bottom:70px;
+    margin-top:0;
+}
+
+#mainDice{
+    height:70px;
+    margin-bottom:10px;
+}
+
+button{
+    font-size:25px;
+    color:white;
+    background-color:#47a5c4;
+    border-radius:15px;
+    border:none;
+    padding:10px 20px 10px 20px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+}
+
+button:hover{
+    background-color:#3e8da8;
+}
+
+.rollHistory{
+    min-width:400px;
+    display:flex;
+    flex-direction:column;
+    margin-top:30px;
+}
+
+.rollItem{
+    min-width:calc(100% - 40px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#f2f2f2;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 5px 5px rgba(0, 0, 0, 0.363);
+    margin-bottom:20px;
+}
+
+.rollItem h2{
+    margin:0;
+}
